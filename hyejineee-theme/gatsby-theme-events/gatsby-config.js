@@ -1,10 +1,16 @@
 module.exports = {
+  siteMetadata: {
+    title: `hyejineee`,
+    siteUrl: `http://hyejineee.github.io`,
+    description: `어떻게 살아야 하는가ㅏ🤔`,
+  },
+
   plugins: [
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: `pages`,
-        path: `${__dirname}/src/pages/`,
+        name: `contents`,
+        path: `${__dirname}/src/contents/`,
       }
     },
     {
