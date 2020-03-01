@@ -9,11 +9,14 @@ const EventsTemplate = () => {
       allMarkdownRemark(sort: { order: DESC, fields: frontmatter___date }) {
         edges {
           node {
-            excerpt(truncate: true, pruneLength: 200)
+            excerpt
             frontmatter {
-              title
+              category
+              date
               path
-              date(formatString: "YYYY-MM-DD")
+              tags
+              title
+              summary
             }
             id
           }
