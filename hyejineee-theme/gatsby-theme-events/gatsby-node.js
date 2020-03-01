@@ -2,7 +2,7 @@ const fs = require("fs");
 
 // Make sure the data directory exists
 exports.onPreBootstrap = ({ reporter }) => {
-  const contentPath = "src/pages";
+  const contentPath = "src/contents";
 
   if (!fs.existsSync(contentPath)) {
     reporter.info(`creating the ${contentPath} directory`);
@@ -48,10 +48,8 @@ exports.createPages = async ({ actions, graphql, reporter }, options) => {
 
   posts.forEach(({ node }) => {
     actions.createPage({
-      path: node.frontmatter.path,
-
+      path: `${node.frontmatter.path}`,
       component: require.resolve("./src/templates/md-template.js"),
-
       context: {
         path: node.frontmatter.path
       }
