@@ -16,7 +16,6 @@ exports.createPages = async ({ actions, graphql, reporter }, options) => {
 
   actions.createPage({
     path: basePath,
-
     component: require.resolve("./src/templates/events.js")
   });
 
