@@ -1,0 +1,30 @@
+.container{
+    width: max-content;
+    background-color: lightcoral;
+}
+.date{
+    font-size: 16px;
+}
+
+.category{
+    font-size: 16px;
+    color: cornflowerblue;
+}
+
+.title{
+    font-size: 24px;
+    color: darkslategray;
+    font-weight: bold;
+}
+
+.summery{
+    font-size: 16px;
+
+}
+
+.tag{
+    background-color: lemonchiffon;
+    padding: 8px;
+    border-radius: 5px;
+    margin: 5px
+}
