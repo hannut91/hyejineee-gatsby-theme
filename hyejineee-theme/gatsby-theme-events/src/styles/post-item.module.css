@@ -1,9 +1,35 @@
 .container{
-    width: max-content;
+    max-width: 100%;
+    width:fit-content;
+    margin:0 auto;
     background-color: lightcoral;
+    padding: 10px; 
+
 }
-.date{
+
+.container p {
     font-size: 16px;
+    margin-bottom: 20px;
+    font-family: 'Noto Sans KR-Bold', sans-serif;
+}
+
+.container h3{
+    font-size: 24px;
+    font-family: 'Song Myung', serif;
+    color: #222222;
+    font-weight: bold;
+}
+
+.container h3 a:visited{
+    color: #333333;
+}
+
+.container span{
+    display: inline-block;
+    font-family: 'Noto Sans KR-Bold', sans-serif;
+    margin-right: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .category{
@@ -11,20 +37,10 @@
     color: cornflowerblue;
 }
 
-.title{
-    font-size: 24px;
-    color: darkslategray;
-    font-weight: bold;
-}
-
-.summery{
-    font-size: 16px;
-
-}
-
 .tag{
+    
     background-color: lemonchiffon;
-    padding: 8px;
+    padding: 5px;
     border-radius: 5px;
-    margin: 5px
+    line-height: 12px;
 }

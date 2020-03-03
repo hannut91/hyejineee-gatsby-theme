@@ -1,5 +1,8 @@
 import React from "react";
 import Header from "./header";
+
+import style from "../styles/main.module.css"
+
 import { graphql, useStaticQuery } from "gatsby";
 
 const Layout = ({ children }) => {
@@ -20,13 +23,12 @@ const Layout = ({ children }) => {
   const siteMetadata = result.site.siteMetadata;
 
   return (
-    <div>
-      <header>
+    <div className={style.container}>
+      <header  className={style.wrapper} >
         <Header siteMetadata={siteMetadata} />
-      
       </header>
 
-      <main>{children}</main>
+      <main className={style.wrapper} >{children}</main>
     </div>
   );
 };
