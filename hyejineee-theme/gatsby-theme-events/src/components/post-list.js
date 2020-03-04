@@ -9,7 +9,6 @@ const PostList = ({ posts }) => {
           return (
             <li key={data.id}>
               <PostItem data = {data}></PostItem>
-              <hr/>
             </li>
           );
         })}
