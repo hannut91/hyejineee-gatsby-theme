@@ -24,7 +24,7 @@ const Layout = ({ children }) => {
 
   return (
     <div className={style.container}>
-      <header  className={style.wrapper} >
+      <header >
         <Header siteMetadata={siteMetadata} />
       </header>
 
