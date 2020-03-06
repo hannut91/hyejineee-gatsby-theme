@@ -1,20 +1,30 @@
 import React from "react";
-import { Link } from "gatsby";
+
+import style from "../styles/bio-header.module.css";
+import CountInfo from "./header-count";
 
 const Header = siteMetadata => {
   const { title, description, imageUrl, categorys } = siteMetadata.siteMetadata;
   return (
-    <div>
-      <h1>{title}</h1>
-      <p>{description}</p>
-      {/* <img src={} /> */}
-
+    <div className={style.container}>
+      <img src={imageUrl} />
       <div>
-        {categorys.map((category, index) => (
-          <Link key={index} to={`/${category}`}>
-            {category}
-          </Link>
-        ))}
+        <h1>{title}</h1>
+        <p>{description}</p>
+
+        {/* <ul>
+          <li> 
+            <CountInfo countInfo ={} />
+          </li>
+
+          <li> 
+            <CountInfo countInfo={}/>
+          </li>
+
+          <li> 
+            <CountInfo countInfo={}/>
+          </li>
+        </ul> */}
       </div>
     </div>
   );
