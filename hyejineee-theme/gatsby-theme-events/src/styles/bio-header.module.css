@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+}
+
+.container p,h1{
+    font-family: 'D2Coding Bold', monospace;
+    color: #ffffff;
+}
+
+.container img{
+    padding: 5px;
+    border: 0.5px solid #ffffff;
+    border-radius: 50%;
+    width: 198px;
+    height: 198px;
+    margin-right: 50px;
+}
+
+.container h1{
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+
+.container p{
+    font-size: 16px;
+}

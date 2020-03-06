@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 
-const Menu = ({ categories }) => {
+const Category = ({ categories }) => {
   return (
     <div>
       {categories.map((category, index) => (
@@ -13,4 +13,4 @@ const Menu = ({ categories }) => {
   );
 };
 
-export default Menu;
+export default Category;

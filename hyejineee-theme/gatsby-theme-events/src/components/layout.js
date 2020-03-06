@@ -1,16 +1,16 @@
 import React from "react";
-import Header from "./header";
-
-import style from "../styles/main.module.css"
-
 import { graphql, useStaticQuery } from "gatsby";
+
+import style from "../styles/main.module.css" 
+import Category from "./menu";
+import Header from "./header";
 
 const Layout = ({ children }) => {
   const result = useStaticQuery(graphql`
     query {
       site {
         siteMetadata {
-          categorys
+          categories
           description
           imageUrl
           siteUrl
@@ -24,8 +24,12 @@ const Layout = ({ children }) => {
 
   return (
     <div className={style.container}>
-      <header >
+      <header className={style.header}>
+        <div>
+          <p> hyejineee.dev </p>
+        </div>
         <Header siteMetadata={siteMetadata} />
+        <Category categories={siteMetadata.categories}/>
       </header>
 
       <main className={style.wrapper} >{children}</main>
