@@ -4,19 +4,21 @@
     flex-direction: column;
 }
 .header {
-    background-color: lightseagreen;
+    background-image: linear-gradient(to top, #5E62C9,#C8FFBE );
+    height: 376px;
 }
 
 .header >div:first-child{
     width: 1166px;
     margin:0 auto;
     color: #ffffff;
-    font-family: 'D2Coding Bold', monospace;
-    line-height: 50px;
-    font-size: 25px;
+    font-family: 'D2Coding', monospace;
+    font-size: 23px;
+    line-height: 40px;
+    margin-bottom: 50px;
 }
 
-.wrapper{
+.wrapper {
     width: 698px;
     margin: 0 auto;
 }

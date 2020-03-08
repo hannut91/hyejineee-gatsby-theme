@@ -3,7 +3,7 @@ import React from "react";
 import style from "../styles/bio-header.module.css";
 import CountInfo from "./header-count";
 
-const Header = siteMetadata => {
+const HeaderBio = siteMetadata => {
   const { title, description, imageUrl, categorys } = siteMetadata.siteMetadata;
   return (
     <div className={style.container}>
@@ -30,4 +30,4 @@ const Header = siteMetadata => {
   );
 };
 
-export default Header;
+export default HeaderBio;
