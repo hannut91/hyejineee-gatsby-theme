@@ -1,9 +1,9 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 
-import style from "../styles/main.module.css" 
-import Category from "./menu";
-import Header from "./header";
+import style from "../styles/main.module.css";
+import Category from "./categories";
+import HeaderBio from "./header-bio";
 
 const Layout = ({ children }) => {
   const result = useStaticQuery(graphql`
@@ -28,11 +28,13 @@ const Layout = ({ children }) => {
         <div>
           <p> hyejineee.dev </p>
         </div>
-        <Header siteMetadata={siteMetadata} />
-        <Category categories={siteMetadata.categories}/>
+        <div className={style.wrapper}>
+          <HeaderBio siteMetadata={siteMetadata} />
+          <Category categories={siteMetadata.categories} />
+        </div>
       </header>
 
-      <main className={style.wrapper} >{children}</main>
+      <main className={style.wrapper}>{children}</main>
     </div>
   );
 };
